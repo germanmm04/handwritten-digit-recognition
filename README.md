@@ -97,7 +97,7 @@ Practica4/
 Clone the repository:
 
 ```bash
-git clone https://github.com/germanmm04/mnist-digit-recognition-onnx.git
+git clone https://github.com/germanmm04/handwritten-digit-recognition
 cd mnist-digit-recognition-onnx
 ```
 
