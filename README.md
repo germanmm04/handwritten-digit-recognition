@@ -82,19 +82,13 @@ Practica4/
 
 ## Screenshots
 
-> Add your own screenshots to an `images/` folder before publishing.
-
-### Web Drawing Interface
-
-![Web Drawing Interface](images/web_interface.jpg)
 
 ### Prediction Result
 
-![Prediction Result](images/prediction_result.jpg)
-
-### Training Output
-
-![Training Output](images/training_output.jpg)
+![Prediction Result](images/test.jpg)
+![Prediction Result](images/test2.jpg)
+![Prediction Result](images/test3.jpg)
+![Prediction Result](images/test4.jpg)
 
 ---
 
