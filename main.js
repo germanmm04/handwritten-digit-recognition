@@ -11,7 +11,6 @@ const clearBtn = document.getElementById("clearBtn");
 const predictBtn = document.getElementById("predictBtn");
 
 const predictionDigitEl = document.getElementById("predictionDigit");
-const predictionConfidenceEl = document.getElementById("predictionConfidence");
 const modelStatusEl = document.getElementById("modelStatus");
 
 let drawing = false;
@@ -103,7 +102,6 @@ canvas.addEventListener("touchend", (e) => {
 clearBtn.addEventListener("click", () => {
   initCanvas();
   predictionDigitEl.textContent = "?";
-  predictionConfidenceEl.textContent = "-- %";
 });
 
 // Preprocesado: capturar, escalar a 32x32, gris, normalizar [0,1] y a tensor [1,32,32,1]
@@ -192,8 +190,7 @@ async function runInference() {
     }
 
     predictionDigitEl.textContent = bestDigit.toString();
-    predictionConfidenceEl.textContent = `${(bestProb * 100).toFixed(1)} %`;
-    setStatus(`Predicción lista (confianza ${(bestProb * 100).toFixed(1)}%)`, "ok");
+    setStatus("Predicción lista.", "ok");
   } catch (err) {
     console.error(err);
     setStatus("Error durante la inferencia.", "error");
